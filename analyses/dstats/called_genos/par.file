@@ -1,0 +1,6 @@
+genotypename: /steveData/genis/warthogs/geno_calls_forqpgraph/eigenstrat/merged_snps_filtered.geno
+snpname: /steveData/genis/warthogs/geno_calls_forqpgraph/eigenstrat/merged_snps_filtered.snp
+indivname: /steveData/genis/warthogs/geno_calls_forqpgraph/eigenstrat/merged_snps_filtered.ind
+popfilename: pop.file
+f4mode: NO
+printsd: YES

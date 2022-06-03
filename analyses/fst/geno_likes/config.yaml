@@ -1,0 +1,18 @@
+info: /home/genis/warthogs/analyses/fst/all_fillelist_SouthEast_grouped.txt
+sites: /home/genis/warthogs/genome_masks/all/beds/autosome_rep_het_dep_map.regions
+chroms: /davidData/genis/references/pig/susscrofa_autosomes.list
+anc: /davidData/genis/references/pig/SusScrofa11.1.fasta.gz
+small_sites: /home/genis/warthogs/genome_masks/downsample/downsample_properly/beds/downsample_200MB_autosome_rep_het_dep_map.regions
+small_chroms: /home/genis/warthogs/genome_masks/downsample/downsample_properly/beds/downsample_200MB_autosome_rep_het_dep_map.chrlist
+outmain: results3
+outbig: /steveData/genis/warthogs/fst
+trios:
+ desert_southeast_ghana:
+  - "Desert"
+  - "SouthEast"
+  - "Ghana"
+windowparams:
+ win:
+  - 100000
+ step:
+  - 100000

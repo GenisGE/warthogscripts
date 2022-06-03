@@ -1,0 +1,6 @@
+Building DAG of jobs...
+InputFunctionException in line 32 of /home/genis/warthogs/genome_masks/depth/filter_depth.snakefile:
+KeyError: 'all'
+Wildcards:
+group=all
+chrr=chr1

@@ -1,0 +1,33 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 15
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	combine_beds
+	2
+
+[Mon Jan 11 18:40:42 2021]
+rule combine_beds:
+    input: results/bed/lowdepth_remove.bed, results/bed/highdepth_remove.bed
+    output: results/bed/all_remove.bed, results/bed/all_keep.bed
+    jobid: 2
+
+
+    cat results/bed/lowdepth_remove.bed results/bed/highdepth_remove.bed | /home/genis/software/bedtools2/bin/bedtools sort | /home/genis/software/bedtools2/bin/bedtools merge > results/bed/all_remove.bed
+    /home/genis/software/bedtools2/bin/bedtools subtract -a /davidData/genis/references/pig/susscrofa_autosomes.bed -b results/bed/all_remove.bed > results/bed/all_keep.bed
+
+[Mon Jan 11 18:43:11 2021]
+Finished job 2.
+1 of 2 steps (50%) done
+
+[Mon Jan 11 18:43:11 2021]
+localrule all:
+    input: results/plots/depthFilter.png, results/bed/all_keep.bed, results/bed/all_remove.bed
+    jobid: 0
+
+[Mon Jan 11 18:43:11 2021]
+Finished job 0.
+2 of 2 steps (100%) done
+Complete log: /home/genis/warthogs/genome_masks/depth/.snakemake/log/2021-01-11T184042.479713.snakemake.log

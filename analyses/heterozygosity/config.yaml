@@ -1,0 +1,49 @@
+angsdparams:
+  minMapQ: 30
+  minQ: 30
+chroms: /davidData/genis/references/pig/susscrofa_autosomes.list
+outmain: results
+ref: /davidData/genis/references/pig/SusScrofa11.1.fasta.gz
+samples:
+  '1002': /davidData/genis/pigs/mapSusScrofa/map/bam/1002.bam
+  '1105': /davidData/genis/pigs/mapSusScrofa/map/bam/1105.bam
+  '1130': /davidData/genis/pigs/mapSusScrofa/map/bam/1130.bam
+  '1257': /davidData/genis/pigs/mapSusScrofa/map/bam/1257.bam
+  '1259': /davidData/genis/pigs/mapSusScrofa/map/bam/1259.bam
+  '1261': /davidData/genis/pigs/mapSusScrofa/map/bam/1261.bam
+  '1262': /davidData/genis/pigs/mapSusScrofa/map/bam/1262.bam
+  '1264': /davidData/genis/pigs/mapSusScrofa/map/bam/1264.bam
+  '2418': /davidData/genis/pigs/mapSusScrofa/map/bam/2418.bam
+  '2541': /davidData/genis/pigs/mapSusScrofa/map/bam/2541.bam
+  '2660': /davidData/genis/pigs/mapSusScrofa/map/bam/2660.bam
+  '3223': /davidData/genis/pigs/mapSusScrofa/map/bam/3223.bam
+  '3224': /davidData/genis/pigs/mapSusScrofa/map/bam/3224.bam
+  '3809': /davidData/genis/pigs/mapSusScrofa/map/bam/3809.bam
+  '4466': /davidData/genis/pigs/mapSusScrofa/map/bam/4466.bam
+  '5221': /davidData/genis/pigs/mapSusScrofa/map/bam/5221.bam
+  '5222': /davidData/genis/pigs/mapSusScrofa/map/bam/5222.bam
+  '5706': /davidData/genis/pigs/mapSusScrofa/map/bam/5706.bam
+  '5708': /davidData/genis/pigs/mapSusScrofa/map/bam/5708.bam
+  '5709': /davidData/genis/pigs/mapSusScrofa/map/bam/5709.bam
+  '5710': /davidData/genis/pigs/mapSusScrofa/map/bam/5710.bam
+  '579': /davidData/genis/pigs/mapSusScrofa/map/bam/579.bam
+  '580': /davidData/genis/pigs/mapSusScrofa/map/bam/580.bam
+  '581': /davidData/genis/pigs/mapSusScrofa/map/bam/581.bam
+  '6274': /davidData/genis/pigs/mapSusScrofa/map/bam/6274.bam
+  '7152': /davidData/genis/pigs/mapSusScrofa/map/bam/7152.bam
+  '7155': /davidData/genis/pigs/mapSusScrofa/map/bam/7155.bam
+  '7160': /davidData/genis/pigs/mapSusScrofa/map/bam/7160.bam
+  '7966': /davidData/genis/pigs/mapSusScrofa/map/bam/7966.bam
+  '8622': /davidData/genis/pigs/mapSusScrofa/map/bam/8622.bam
+  '8623': /davidData/genis/pigs/mapSusScrofa/map/bam/8623.bam
+  '8627': /davidData/genis/pigs/mapSusScrofa/map/bam/8627.bam
+  '8628': /davidData/genis/pigs/mapSusScrofa/map/bam/8628.bam
+  '8922': /davidData/genis/pigs/mapSusScrofa/map/bam/8922.bam
+  '8929': /davidData/genis/pigs/mapSusScrofa/map/bam/8929.bam
+  '8931': /davidData/genis/pigs/mapSusScrofa/map/bam/8931.bam
+  '8950': /davidData/genis/pigs/mapSusScrofa/map/bam/8950.bam
+  '9124': /davidData/genis/pigs/mapSusScrofa/map/bam/9124.bam
+  '931': /davidData/genis/pigs/mapSusScrofa/map/bam/931.bam
+  group1: /davidData/genis/pigs/mapSusScrofa/rehead_merged/group1_merged_fixedrg.bam
+  group4: /davidData/genis/pigs/mapSusScrofa/rehead_merged/group4_merged_fixedrg.bam
+sites: /home/genis/warthogs/genome_masks/all/beds/autosome_rep_het_dep_map.regions

@@ -1,0 +1,7 @@
+ref: /davidData/genis/references/pig/SusScrofa11.1.fasta
+outmain: results
+tmp_dir: /steveData/genis/tmp
+settings:
+ k: 100
+ e: 2
+ m: 1

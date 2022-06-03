@@ -1,0 +1,23 @@
+
+args <- commandArgs(trailingOnly=T)
+
+indir <- args[1]
+outpng <- args[2]
+
+
+f <- list.files(indir, pattern=".split.years", full.names=T)
+
+
+res <- lapply(f,read.table,nrows=2)
+names(res) <- gsub(".split.years", "", basename(f))
+
+df <- do.call(rbind,res)
+
+
+bitmap(outpng, res=300,w=8,h=6)
+par(oma = c(6,0,0,0))
+barplot(df$V2/1000000, las=2,
+        names.arg=paste(gsub(".[12]$", "", rownames(df)), df$V1, sep="_"),
+        ylab="Mya", main="Split times point estimates based on TT method")
+dev.off()
+

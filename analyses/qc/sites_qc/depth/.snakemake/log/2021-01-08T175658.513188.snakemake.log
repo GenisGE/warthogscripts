@@ -1,0 +1,6 @@
+Building DAG of jobs...
+InputFunctionException in line 22 of /home/genis/warthogs/genome_masks/depth/filter_depth.snakefile:
+NameError: name 'wildcards' is not defined
+Wildcards:
+group=lowdepth
+chrr=chr1

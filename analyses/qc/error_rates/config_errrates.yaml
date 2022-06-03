@@ -1,0 +1,5 @@
+bamlist: /home/jfl323/paper/filelists/allFromThesis.filelist
+perfect: /davidData/genis/pigs/mapSusScrofa/map/bam/1257.bam
+ref: /emc/genis/pigs/map/ref/susScrofa11.1.fasta.gz
+sites: /home/genis/warthogs/genome_masks/all/beds/autosome_rep_het_dep_map.regions
+chroms: /home/jfl323/paper/refAutosomes.rf

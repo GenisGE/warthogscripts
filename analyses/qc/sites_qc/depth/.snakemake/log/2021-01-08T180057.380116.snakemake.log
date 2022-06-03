@@ -1,0 +1,369 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 10
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	36	do_depths
+	37
+
+[Fri Jan  8 18:00:57 2021]
+rule do_depths:
+    input: /home/genis/warthogs/filelist/lowdepth.bamlist
+    output: results/depths/lowdepth/chr8_lowdepth.depthGlobal, results/depths/lowdepth/chr8_lowdepth.pos.gz
+    log: results/depths/lowdepth/chr8_lowdepth.arg
+    jobid: 8
+    wildcards: group=lowdepth, chrr=chr8
+
+/home/genis/software/angsd/angsd -doCounts 1 -doDepth 1 -dumpCounts 1 -maxdepth 5000 -minQ 30 -minMapQ 30 -r chr8 -bam /home/genis/warthogs/filelist/lowdepth.bamlist -out results/depths/lowdepth/chr8_lowdepth
+
+[Fri Jan  8 18:00:57 2021]
+rule do_depths:
+    input: /home/genis/warthogs/filelist/lowdepth.bamlist
+    output: results/depths/lowdepth/chr2_lowdepth.depthGlobal, results/depths/lowdepth/chr2_lowdepth.pos.gz
+    log: results/depths/lowdepth/chr2_lowdepth.arg
+    jobid: 2
+    wildcards: group=lowdepth, chrr=chr2
+
+/home/genis/software/angsd/angsd -doCounts 1 -doDepth 1 -dumpCounts 1 -maxdepth 5000 -minQ 30 -minMapQ 30 -r chr2 -bam /home/genis/warthogs/filelist/lowdepth.bamlist -out results/depths/lowdepth/chr2_lowdepth
+
+[Fri Jan  8 18:00:57 2021]
+rule do_depths:
+    input: /home/genis/warthogs/filelist/lowdepth.bamlist
+    output: results/depths/lowdepth/chr15_lowdepth.depthGlobal, results/depths/lowdepth/chr15_lowdepth.pos.gz
+    log: results/depths/lowdepth/chr15_lowdepth.arg
+    jobid: 15
+    wildcards: group=lowdepth, chrr=chr15
+
+/home/genis/software/angsd/angsd -doCounts 1 -doDepth 1 -dumpCounts 1 -maxdepth 5000 -minQ 30 -minMapQ 30 -r chr15 -bam /home/genis/warthogs/filelist/lowdepth.bamlist -out results/depths/lowdepth/chr15_lowdepth
+
+[Fri Jan  8 18:00:57 2021]
+rule do_depths:
+    input: /home/genis/warthogs/filelist/lowdepth.bamlist
+    output: results/depths/lowdepth/chr1_lowdepth.depthGlobal, results/depths/lowdepth/chr1_lowdepth.pos.gz
+    log: results/depths/lowdepth/chr1_lowdepth.arg
+    jobid: 1
+    wildcards: group=lowdepth, chrr=chr1
+
+/home/genis/software/angsd/angsd -doCounts 1 -doDepth 1 -dumpCounts 1 -maxdepth 5000 -minQ 30 -minMapQ 30 -r chr1 -bam /home/genis/warthogs/filelist/lowdepth.bamlist -out results/depths/lowdepth/chr1_lowdepth
+
+[Fri Jan  8 18:00:57 2021]
+rule do_depths:
+    input: /home/genis/warthogs/filelist/lowdepth.bamlist
+    output: results/depths/lowdepth/chr7_lowdepth.depthGlobal, results/depths/lowdepth/chr7_lowdepth.pos.gz
+    log: results/depths/lowdepth/chr7_lowdepth.arg
+    jobid: 7
+    wildcards: group=lowdepth, chrr=chr7
+
+/home/genis/software/angsd/angsd -doCounts 1 -doDepth 1 -dumpCounts 1 -maxdepth 5000 -minQ 30 -minMapQ 30 -r chr7 -bam /home/genis/warthogs/filelist/lowdepth.bamlist -out results/depths/lowdepth/chr7_lowdepth
+
+[Fri Jan  8 18:00:57 2021]
+rule do_depths:
+    input: /home/genis/warthogs/filelist/lowdepth.bamlist
+    output: results/depths/lowdepth/chr14_lowdepth.depthGlobal, results/depths/lowdepth/chr14_lowdepth.pos.gz
+    log: results/depths/lowdepth/chr14_lowdepth.arg
+    jobid: 14
+    wildcards: group=lowdepth, chrr=chr14
+
+/home/genis/software/angsd/angsd -doCounts 1 -doDepth 1 -dumpCounts 1 -maxdepth 5000 -minQ 30 -minMapQ 30 -r chr14 -bam /home/genis/warthogs/filelist/lowdepth.bamlist -out results/depths/lowdepth/chr14_lowdepth
+
+[Fri Jan  8 18:00:57 2021]
+rule do_depths:
+    input: /home/genis/warthogs/filelist/lowdepth.bamlist
+    output: results/depths/lowdepth/chr9_lowdepth.depthGlobal, results/depths/lowdepth/chr9_lowdepth.pos.gz
+    log: results/depths/lowdepth/chr9_lowdepth.arg
+    jobid: 9
+    wildcards: group=lowdepth, chrr=chr9
+
+/home/genis/software/angsd/angsd -doCounts 1 -doDepth 1 -dumpCounts 1 -maxdepth 5000 -minQ 30 -minMapQ 30 -r chr9 -bam /home/genis/warthogs/filelist/lowdepth.bamlist -out results/depths/lowdepth/chr9_lowdepth
+
+[Fri Jan  8 18:00:57 2021]
+rule do_depths:
+    input: /home/genis/warthogs/filelist/lowdepth.bamlist
+    output: results/depths/lowdepth/chr13_lowdepth.depthGlobal, results/depths/lowdepth/chr13_lowdepth.pos.gz
+    log: results/depths/lowdepth/chr13_lowdepth.arg
+    jobid: 13
+    wildcards: group=lowdepth, chrr=chr13
+
+/home/genis/software/angsd/angsd -doCounts 1 -doDepth 1 -dumpCounts 1 -maxdepth 5000 -minQ 30 -minMapQ 30 -r chr13 -bam /home/genis/warthogs/filelist/lowdepth.bamlist -out results/depths/lowdepth/chr13_lowdepth
+
+[Fri Jan  8 18:00:57 2021]
+rule do_depths:
+    input: /home/genis/warthogs/filelist/lowdepth.bamlist
+    output: results/depths/lowdepth/chr5_lowdepth.depthGlobal, results/depths/lowdepth/chr5_lowdepth.pos.gz
+    log: results/depths/lowdepth/chr5_lowdepth.arg
+    jobid: 5
+    wildcards: group=lowdepth, chrr=chr5
+
+/home/genis/software/angsd/angsd -doCounts 1 -doDepth 1 -dumpCounts 1 -maxdepth 5000 -minQ 30 -minMapQ 30 -r chr5 -bam /home/genis/warthogs/filelist/lowdepth.bamlist -out results/depths/lowdepth/chr5_lowdepth
+
+[Fri Jan  8 18:00:57 2021]
+rule do_depths:
+    input: /home/genis/warthogs/filelist/lowdepth.bamlist
+    output: results/depths/lowdepth/chr4_lowdepth.depthGlobal, results/depths/lowdepth/chr4_lowdepth.pos.gz
+    log: results/depths/lowdepth/chr4_lowdepth.arg
+    jobid: 4
+    wildcards: group=lowdepth, chrr=chr4
+
+/home/genis/software/angsd/angsd -doCounts 1 -doDepth 1 -dumpCounts 1 -maxdepth 5000 -minQ 30 -minMapQ 30 -r chr4 -bam /home/genis/warthogs/filelist/lowdepth.bamlist -out results/depths/lowdepth/chr4_lowdepth
+[Fri Jan  8 19:06:45 2021]
+Finished job 5.
+1 of 37 steps (3%) done
+
+[Fri Jan  8 19:06:46 2021]
+rule do_depths:
+    input: /home/genis/warthogs/filelist/lowdepth.bamlist
+    output: results/depths/lowdepth/chr16_lowdepth.depthGlobal, results/depths/lowdepth/chr16_lowdepth.pos.gz
+    log: results/depths/lowdepth/chr16_lowdepth.arg
+    jobid: 16
+    wildcards: group=lowdepth, chrr=chr16
+
+/home/genis/software/angsd/angsd -doCounts 1 -doDepth 1 -dumpCounts 1 -maxdepth 5000 -minQ 30 -minMapQ 30 -r chr16 -bam /home/genis/warthogs/filelist/lowdepth.bamlist -out results/depths/lowdepth/chr16_lowdepth
+[Fri Jan  8 19:20:54 2021]
+Finished job 7.
+2 of 37 steps (5%) done
+
+[Fri Jan  8 19:20:54 2021]
+rule do_depths:
+    input: /home/genis/warthogs/filelist/lowdepth.bamlist
+    output: results/depths/lowdepth/chr3_lowdepth.depthGlobal, results/depths/lowdepth/chr3_lowdepth.pos.gz
+    log: results/depths/lowdepth/chr3_lowdepth.arg
+    jobid: 3
+    wildcards: group=lowdepth, chrr=chr3
+
+/home/genis/software/angsd/angsd -doCounts 1 -doDepth 1 -dumpCounts 1 -maxdepth 5000 -minQ 30 -minMapQ 30 -r chr3 -bam /home/genis/warthogs/filelist/lowdepth.bamlist -out results/depths/lowdepth/chr3_lowdepth
+[Fri Jan  8 19:22:45 2021]
+Finished job 4.
+3 of 37 steps (8%) done
+
+[Fri Jan  8 19:22:45 2021]
+rule do_depths:
+    input: /home/genis/warthogs/filelist/lowdepth.bamlist
+    output: results/depths/lowdepth/chr10_lowdepth.depthGlobal, results/depths/lowdepth/chr10_lowdepth.pos.gz
+    log: results/depths/lowdepth/chr10_lowdepth.arg
+    jobid: 10
+    wildcards: group=lowdepth, chrr=chr10
+
+/home/genis/software/angsd/angsd -doCounts 1 -doDepth 1 -dumpCounts 1 -maxdepth 5000 -minQ 30 -minMapQ 30 -r chr10 -bam /home/genis/warthogs/filelist/lowdepth.bamlist -out results/depths/lowdepth/chr10_lowdepth
+[Fri Jan  8 19:24:22 2021]
+Finished job 15.
+4 of 37 steps (11%) done
+
+[Fri Jan  8 19:24:22 2021]
+rule do_depths:
+    input: /home/genis/warthogs/filelist/lowdepth.bamlist
+    output: results/depths/lowdepth/chr6_lowdepth.depthGlobal, results/depths/lowdepth/chr6_lowdepth.pos.gz
+    log: results/depths/lowdepth/chr6_lowdepth.arg
+    jobid: 6
+    wildcards: group=lowdepth, chrr=chr6
+
+/home/genis/software/angsd/angsd -doCounts 1 -doDepth 1 -dumpCounts 1 -maxdepth 5000 -minQ 30 -minMapQ 30 -r chr6 -bam /home/genis/warthogs/filelist/lowdepth.bamlist -out results/depths/lowdepth/chr6_lowdepth
+[Fri Jan  8 19:25:07 2021]
+Finished job 8.
+5 of 37 steps (14%) done
+
+[Fri Jan  8 19:25:07 2021]
+rule do_depths:
+    input: /home/genis/warthogs/filelist/lowdepth.bamlist
+    output: results/depths/lowdepth/chr17_lowdepth.depthGlobal, results/depths/lowdepth/chr17_lowdepth.pos.gz
+    log: results/depths/lowdepth/chr17_lowdepth.arg
+    jobid: 17
+    wildcards: group=lowdepth, chrr=chr17
+
+/home/genis/software/angsd/angsd -doCounts 1 -doDepth 1 -dumpCounts 1 -maxdepth 5000 -minQ 30 -minMapQ 30 -r chr17 -bam /home/genis/warthogs/filelist/lowdepth.bamlist -out results/depths/lowdepth/chr17_lowdepth
+[Fri Jan  8 19:29:42 2021]
+Finished job 14.
+6 of 37 steps (16%) done
+
+[Fri Jan  8 19:29:42 2021]
+rule do_depths:
+    input: /home/genis/warthogs/filelist/lowdepth.bamlist
+    output: results/depths/lowdepth/chr11_lowdepth.depthGlobal, results/depths/lowdepth/chr11_lowdepth.pos.gz
+    log: results/depths/lowdepth/chr11_lowdepth.arg
+    jobid: 11
+    wildcards: group=lowdepth, chrr=chr11
+
+/home/genis/software/angsd/angsd -doCounts 1 -doDepth 1 -dumpCounts 1 -maxdepth 5000 -minQ 30 -minMapQ 30 -r chr11 -bam /home/genis/warthogs/filelist/lowdepth.bamlist -out results/depths/lowdepth/chr11_lowdepth
+[Fri Jan  8 19:30:10 2021]
+Finished job 9.
+7 of 37 steps (19%) done
+
+[Fri Jan  8 19:30:10 2021]
+rule do_depths:
+    input: /home/genis/warthogs/filelist/lowdepth.bamlist
+    output: results/depths/lowdepth/chr12_lowdepth.depthGlobal, results/depths/lowdepth/chr12_lowdepth.pos.gz
+    log: results/depths/lowdepth/chr12_lowdepth.arg
+    jobid: 12
+    wildcards: group=lowdepth, chrr=chr12
+
+/home/genis/software/angsd/angsd -doCounts 1 -doDepth 1 -dumpCounts 1 -maxdepth 5000 -minQ 30 -minMapQ 30 -r chr12 -bam /home/genis/warthogs/filelist/lowdepth.bamlist -out results/depths/lowdepth/chr12_lowdepth
+[Fri Jan  8 19:44:20 2021]
+Finished job 2.
+8 of 37 steps (22%) done
+
+[Fri Jan  8 19:44:20 2021]
+rule do_depths:
+    input: /home/genis/warthogs/filelist/lowdepth.bamlist
+    output: results/depths/lowdepth/chr18_lowdepth.depthGlobal, results/depths/lowdepth/chr18_lowdepth.pos.gz
+    log: results/depths/lowdepth/chr18_lowdepth.arg
+    jobid: 18
+    wildcards: group=lowdepth, chrr=chr18
+
+/home/genis/software/angsd/angsd -doCounts 1 -doDepth 1 -dumpCounts 1 -maxdepth 5000 -minQ 30 -minMapQ 30 -r chr18 -bam /home/genis/warthogs/filelist/lowdepth.bamlist -out results/depths/lowdepth/chr18_lowdepth
+[Fri Jan  8 19:51:37 2021]
+Finished job 16.
+9 of 37 steps (24%) done
+
+[Fri Jan  8 19:51:37 2021]
+rule do_depths:
+    input: /home/genis/warthogs/filelist/highdepth.bamlist
+    output: results/depths/highdepth/chr15_highdepth.depthGlobal, results/depths/highdepth/chr15_highdepth.pos.gz
+    log: results/depths/highdepth/chr15_highdepth.arg
+    jobid: 33
+    wildcards: group=highdepth, chrr=chr15
+
+/home/genis/software/angsd/angsd -doCounts 1 -doDepth 1 -dumpCounts 1 -maxdepth 5000 -minQ 30 -minMapQ 30 -r chr15 -bam /home/genis/warthogs/filelist/highdepth.bamlist -out results/depths/highdepth/chr15_highdepth
+[Fri Jan  8 20:02:06 2021]
+Finished job 17.
+10 of 37 steps (27%) done
+
+[Fri Jan  8 20:02:06 2021]
+rule do_depths:
+    input: /home/genis/warthogs/filelist/highdepth.bamlist
+    output: results/depths/highdepth/chr2_highdepth.depthGlobal, results/depths/highdepth/chr2_highdepth.pos.gz
+    log: results/depths/highdepth/chr2_highdepth.arg
+    jobid: 20
+    wildcards: group=highdepth, chrr=chr2
+
+/home/genis/software/angsd/angsd -doCounts 1 -doDepth 1 -dumpCounts 1 -maxdepth 5000 -minQ 30 -minMapQ 30 -r chr2 -bam /home/genis/warthogs/filelist/highdepth.bamlist -out results/depths/highdepth/chr2_highdepth
+[Fri Jan  8 20:06:21 2021]
+Finished job 13.
+11 of 37 steps (30%) done
+
+[Fri Jan  8 20:06:21 2021]
+rule do_depths:
+    input: /home/genis/warthogs/filelist/highdepth.bamlist
+    output: results/depths/highdepth/chr8_highdepth.depthGlobal, results/depths/highdepth/chr8_highdepth.pos.gz
+    log: results/depths/highdepth/chr8_highdepth.arg
+    jobid: 26
+    wildcards: group=highdepth, chrr=chr8
+
+/home/genis/software/angsd/angsd -doCounts 1 -doDepth 1 -dumpCounts 1 -maxdepth 5000 -minQ 30 -minMapQ 30 -r chr8 -bam /home/genis/warthogs/filelist/highdepth.bamlist -out results/depths/highdepth/chr8_highdepth
+[Fri Jan  8 20:09:18 2021]
+Finished job 12.
+12 of 37 steps (32%) done
+
+[Fri Jan  8 20:09:18 2021]
+rule do_depths:
+    input: /home/genis/warthogs/filelist/highdepth.bamlist
+    output: results/depths/highdepth/chr13_highdepth.depthGlobal, results/depths/highdepth/chr13_highdepth.pos.gz
+    log: results/depths/highdepth/chr13_highdepth.arg
+    jobid: 31
+    wildcards: group=highdepth, chrr=chr13
+
+/home/genis/software/angsd/angsd -doCounts 1 -doDepth 1 -dumpCounts 1 -maxdepth 5000 -minQ 30 -minMapQ 30 -r chr13 -bam /home/genis/warthogs/filelist/highdepth.bamlist -out results/depths/highdepth/chr13_highdepth
+[Fri Jan  8 20:12:42 2021]
+Finished job 10.
+13 of 37 steps (35%) done
+
+[Fri Jan  8 20:12:42 2021]
+rule do_depths:
+    input: /home/genis/warthogs/filelist/highdepth.bamlist
+    output: results/depths/highdepth/chr9_highdepth.depthGlobal, results/depths/highdepth/chr9_highdepth.pos.gz
+    log: results/depths/highdepth/chr9_highdepth.arg
+    jobid: 27
+    wildcards: group=highdepth, chrr=chr9
+
+/home/genis/software/angsd/angsd -doCounts 1 -doDepth 1 -dumpCounts 1 -maxdepth 5000 -minQ 30 -minMapQ 30 -r chr9 -bam /home/genis/warthogs/filelist/highdepth.bamlist -out results/depths/highdepth/chr9_highdepth
+[Fri Jan  8 20:17:03 2021]
+Finished job 11.
+14 of 37 steps (38%) done
+
+[Fri Jan  8 20:17:03 2021]
+rule do_depths:
+    input: /home/genis/warthogs/filelist/highdepth.bamlist
+    output: results/depths/highdepth/chr14_highdepth.depthGlobal, results/depths/highdepth/chr14_highdepth.pos.gz
+    log: results/depths/highdepth/chr14_highdepth.arg
+    jobid: 32
+    wildcards: group=highdepth, chrr=chr14
+
+/home/genis/software/angsd/angsd -doCounts 1 -doDepth 1 -dumpCounts 1 -maxdepth 5000 -minQ 30 -minMapQ 30 -r chr14 -bam /home/genis/warthogs/filelist/highdepth.bamlist -out results/depths/highdepth/chr14_highdepth
+[Fri Jan  8 20:19:03 2021]
+Finished job 33.
+15 of 37 steps (41%) done
+
+[Fri Jan  8 20:19:03 2021]
+rule do_depths:
+    input: /home/genis/warthogs/filelist/highdepth.bamlist
+    output: results/depths/highdepth/chr1_highdepth.depthGlobal, results/depths/highdepth/chr1_highdepth.pos.gz
+    log: results/depths/highdepth/chr1_highdepth.arg
+    jobid: 19
+    wildcards: group=highdepth, chrr=chr1
+
+/home/genis/software/angsd/angsd -doCounts 1 -doDepth 1 -dumpCounts 1 -maxdepth 5000 -minQ 30 -minMapQ 30 -r chr1 -bam /home/genis/warthogs/filelist/highdepth.bamlist -out results/depths/highdepth/chr1_highdepth
+[Fri Jan  8 20:25:22 2021]
+Error in rule do_depths:
+    jobid: 1
+    output: results/depths/lowdepth/chr1_lowdepth.depthGlobal, results/depths/lowdepth/chr1_lowdepth.pos.gz
+    log: results/depths/lowdepth/chr1_lowdepth.arg (check log file(s) for error message)
+    shell:
+        /home/genis/software/angsd/angsd -doCounts 1 -doDepth 1 -dumpCounts 1 -maxdepth 5000 -minQ 30 -minMapQ 30 -r chr1 -bam /home/genis/warthogs/filelist/lowdepth.bamlist -out results/depths/lowdepth/chr1_lowdepth
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job do_depths since they might be corrupted:
+results/depths/lowdepth/chr1_lowdepth.pos.gz
+[Fri Jan  8 20:25:38 2021]
+Error in rule do_depths:
+    jobid: 6
+    output: results/depths/lowdepth/chr6_lowdepth.depthGlobal, results/depths/lowdepth/chr6_lowdepth.pos.gz
+    log: results/depths/lowdepth/chr6_lowdepth.arg (check log file(s) for error message)
+    shell:
+        /home/genis/software/angsd/angsd -doCounts 1 -doDepth 1 -dumpCounts 1 -maxdepth 5000 -minQ 30 -minMapQ 30 -r chr6 -bam /home/genis/warthogs/filelist/lowdepth.bamlist -out results/depths/lowdepth/chr6_lowdepth
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job do_depths since they might be corrupted:
+results/depths/lowdepth/chr6_lowdepth.pos.gz
+[Fri Jan  8 20:26:15 2021]
+Error in rule do_depths:
+    jobid: 3
+    output: results/depths/lowdepth/chr3_lowdepth.depthGlobal, results/depths/lowdepth/chr3_lowdepth.pos.gz
+    log: results/depths/lowdepth/chr3_lowdepth.arg (check log file(s) for error message)
+    shell:
+        /home/genis/software/angsd/angsd -doCounts 1 -doDepth 1 -dumpCounts 1 -maxdepth 5000 -minQ 30 -minMapQ 30 -r chr3 -bam /home/genis/warthogs/filelist/lowdepth.bamlist -out results/depths/lowdepth/chr3_lowdepth
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job do_depths since they might be corrupted:
+results/depths/lowdepth/chr3_lowdepth.pos.gz
+[Fri Jan  8 20:27:29 2021]
+Error in rule do_depths:
+    jobid: 19
+    output: results/depths/highdepth/chr1_highdepth.depthGlobal, results/depths/highdepth/chr1_highdepth.pos.gz
+    log: results/depths/highdepth/chr1_highdepth.arg (check log file(s) for error message)
+    shell:
+        /home/genis/software/angsd/angsd -doCounts 1 -doDepth 1 -dumpCounts 1 -maxdepth 5000 -minQ 30 -minMapQ 30 -r chr1 -bam /home/genis/warthogs/filelist/highdepth.bamlist -out results/depths/highdepth/chr1_highdepth
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job do_depths since they might be corrupted:
+results/depths/highdepth/chr1_highdepth.pos.gz
+[Fri Jan  8 20:35:35 2021]
+Finished job 20.
+16 of 37 steps (43%) done
+[Fri Jan  8 20:35:41 2021]
+Finished job 26.
+17 of 37 steps (46%) done
+[Fri Jan  8 20:36:49 2021]
+Finished job 18.
+18 of 37 steps (49%) done
+[Fri Jan  8 20:44:29 2021]
+Finished job 32.
+19 of 37 steps (51%) done
+[Fri Jan  8 20:45:05 2021]
+Finished job 27.
+20 of 37 steps (54%) done
+[Fri Jan  8 20:55:38 2021]
+Finished job 31.
+21 of 37 steps (57%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /home/genis/warthogs/genome_masks/depth/.snakemake/log/2021-01-08T180057.380116.snakemake.log

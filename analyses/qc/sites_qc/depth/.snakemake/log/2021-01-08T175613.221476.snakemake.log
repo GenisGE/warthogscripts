@@ -1,0 +1,3 @@
+KeyError in line 30 of /home/genis/warthogs/genome_masks/depth/filter_depth.snakefile:
+'ansgsdparams'
+  File "/home/genis/warthogs/genome_masks/depth/filter_depth.snakefile", line 30, in <module>

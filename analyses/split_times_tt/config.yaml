@@ -1,0 +1,67 @@
+
+outmain: "results"
+scriptsdir: "scripts"
+
+bcf: /steveData/genis/warthogs/geno_calls2/vcf/merged_snps_filtered_10dp_3het.bcf.gz
+
+do_tt:
+ desert_ghana:
+  - Desert_8922
+  - Ghana_7155
+ desert_tanzania:
+  - Desert_8922
+  - Tanzania_8627
+ desert_zambia:
+  - Desert_8922
+  - Zambia_2541
+ desert_zimbabwe:
+  - Desert_8922
+  - Zimbabwe_1257
+ desert_namibia:
+  - Desert_8922
+  - Namibia_2418
+ ghana_tanzania:
+  - Ghana_7155
+  - Tanzania_8627
+ ghana_zambia:
+  - Ghana_7155
+  - Zambia_2541
+ ghana_zimbabwe:
+  - Ghana_7155
+  - Zimbabwe_1257
+ ghana_namibia:
+  - Ghana_7155
+  - Namibia_2418
+ tanzania_zambia:
+  - Tanzania_8627
+  - Zambia_2541
+ tanzania_zimbabwe:
+  - Tanzania_8627
+  - Zimbabwe_1257  
+ tanzania_namibia:
+  - Tanzania_8627
+  - Namibia_2418  
+ zambia_zimbabwe:
+  - Zambia_2541
+  - Zimbabwe_1257
+ zambia_namibia:
+  - Zambia_2541
+  - Namibia_2418
+ zimbabwe_namibia:
+  - Zimbabwe_1257
+  - Namibia_2418
+
+
+outgroups:
+ - RedRiverHog_1110
+ - Babirusa_babirusa
+
+mu: 1.49e-8
+g: 6
+
+
+do_tto:
+ None: None
+
+
+close_outgroup: None

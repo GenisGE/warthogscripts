@@ -1,0 +1,10 @@
+groups:
+  lowdepth: /home/genis/warthogs/filelist/lowdepth.bamlist
+  highdepth: /home/genis/warthogs/filelist/highdepth.bamlist
+outmain: results
+chroms: /davidData/genis/references/pig/susscrofa_autosomes.list
+angsdparams:
+  maxdepth: 5000
+  minQ: 30
+  minMapQ: 30
+allbed: /davidData/genis/references/pig/susscrofa_autosomes.bed

@@ -1,0 +1,11 @@
+
+
+args <- commandArgs(trailingOnly=T)
+
+indir <- args[1]
+outpng <- args[2]
+
+
+
+pattern <- ".tt.split.years"
+plottitle <- "Ancestral population size point estimates based on TT method"

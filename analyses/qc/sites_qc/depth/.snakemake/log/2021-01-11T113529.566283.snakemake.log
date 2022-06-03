@@ -1,0 +1,3 @@
+WildcardError in line 45 of /home/genis/warthogs/genome_masks/depth/filter_depth.snakefile:
+No values given for wildcard 'chrr'.
+  File "/home/genis/warthogs/genome_masks/depth/filter_depth.snakefile", line 45, in <module>

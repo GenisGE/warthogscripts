@@ -1,0 +1,29 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	plot_depths
+	2
+
+[Mon Jan 11 11:44:08 2021]
+rule plot_depths:
+    input: results/depths/all_lowdepth.depthGlobal, results/depths/all_highdepth.depthGlobal, results/depths/lowdepth.depthMedian, results/depths/highdepth.depthMedian
+    output: results/plots/depthFilter.png
+    jobid: 1
+
+[Mon Jan 11 11:44:09 2021]
+Error in rule plot_depths:
+    jobid: 1
+    output: results/plots/depthFilter.png
+    shell:
+        Rscript scripts/plotDepths.R results lowdepth highdepth
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job plot_depths since they might be corrupted:
+results/plots/depthFilter.png
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /home/genis/warthogs/genome_masks/depth/.snakemake/log/2021-01-11T114408.543735.snakemake.log

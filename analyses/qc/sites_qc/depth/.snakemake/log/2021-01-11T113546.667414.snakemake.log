@@ -1,0 +1,5 @@
+Building DAG of jobs...
+MissingInputException in line 57 of /home/genis/warthogs/genome_masks/depth/filter_depth.snakefile:
+Missing input files for rule plot_depths:
+results/depths/all_highdepth.depthGlobal
+results/depths/all_lowdepth.depthGlobal

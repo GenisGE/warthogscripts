@@ -1,0 +1,24 @@
+DIR:	/steveData/genis/warthogs/geno_calls_forqpgraph/eigenstrat/
+indivname:	DIR/merged_snps_filtered.ind
+snpname:	DIR/merged_snps_filtered.snp
+genotypename:	DIR/merged_snps_filtered.geno
+outpop:	NULL
+useallsnps:	YES
+## small fudge factor to add on diagonal of f3.  Improves stability
+diag:          .0001
+blgsize:        0.05
+## Default is NO;  Estimate of error covariance is used.  Unstable for large problems 
+## and instead we fit f_3 stats with "base" population first label
+lsqmode:	YES
+## controls output sometimes more decimals are desired
+hires:         YES
+## Number of initial tries. Used for finding the global optimum.
+initmix:      1000
+## controls accuracy of recovereed admixture weights.  Coefficients will be within
+## "precision" of MLE estimate.
+precision:    .0001
+## in order to preserve the standard scaling of the f-statistics without an extra
+## denominator
+lambdascale:	1
+## Used for pseudo haploid data. Should be only 0 or 2 in genofile (9 for missing data)
+##inbreed:	YES

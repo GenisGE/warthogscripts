@@ -1,0 +1,34 @@
+/home/genis/software/AdmixTools/src/qpDstat: parameter file: par.file
+### THE INPUT PARAMETERS
+##PARAMETER NAME: VALUE
+genotypename: /steveData/genis/warthogs/geno_calls_forqpgraph/eigenstrat/merged_snps_filtered.geno
+snpname: /steveData/genis/warthogs/geno_calls_forqpgraph/eigenstrat/merged_snps_filtered.snp
+indivname: /steveData/genis/warthogs/geno_calls_forqpgraph/eigenstrat/merged_snps_filtered.ind
+popfilename: pop.file
+f4mode: NO
+printsd: YES
+## qpDstat version: 900
+/steveData/genis/warthogs/geno_calls_forqpgraph/eigenstrat/merged_snps_filtered.snp: genetic distance set from physical distance
+number of quadruples 10
+  0                Ghana    1
+  1             Tanzania    1
+  2               Zambia    1
+  3             Zimbabwe    1
+  4              Namibia    1
+  5               Desert    1
+  6          DomesticPig    1
+jackknife block size:     0.050
+snps: 40651143  indivs: 7
+number of blocks for block jackknife: 461
+nrows, ncols: 7 40651143
+result:      Ghana   Tanzania     Desert DomesticPig     -0.1145      0.004307   -26.587  183877 231401 40651143 
+result:      Ghana     Zambia     Desert DomesticPig     -0.1185      0.004483   -26.437  184089 233554 40651143 
+result:      Ghana   Zimbabwe     Desert DomesticPig     -0.1208      0.004633   -26.075  184351 234969 40651143 
+result:      Ghana    Namibia     Desert DomesticPig     -0.1291      0.004684   -27.561  183229 237506 40651143 
+result:   Tanzania     Zambia     Desert DomesticPig     -0.0063      0.003636    -1.736  152965 154907 40651143 
+result:   Tanzania   Zimbabwe     Desert DomesticPig     -0.0100      0.003719    -2.696  152934 156028 40651143 
+result:   Tanzania    Namibia     Desert DomesticPig     -0.0216      0.004283    -5.053  152720 159473 40651143 
+result:     Zambia   Zimbabwe     Desert DomesticPig     -0.0041      0.003494    -1.163  141463 142616 40651143 
+result:     Zambia    Namibia     Desert DomesticPig     -0.0167      0.003545    -4.711  141664 146475 40651143 
+result:   Zimbabwe    Namibia     Desert DomesticPig     -0.0133      0.003991    -3.327  135933 139592 40651143 
+##end of qpDstat:      308.193 seconds cpu    33984.344 Mbytes in use

@@ -1,0 +1,6 @@
+Building DAG of jobs...
+InputFunctionException in line 22 of /home/genis/warthogs/genome_masks/depth/filter_depth.snakefile:
+KeyError: 'lowdepth'
+Wildcards:
+group=lowdepth
+chrr=chr1

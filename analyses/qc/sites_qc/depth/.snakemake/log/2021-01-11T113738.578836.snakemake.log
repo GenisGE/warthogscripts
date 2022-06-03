@@ -1,0 +1,50 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	2	combine_depths
+	1	plot_depths
+	4
+
+[Mon Jan 11 11:37:38 2021]
+rule combine_depths:
+    input: results/depths/lowdepth/chr1_lowdepth.depthGlobal, results/depths/lowdepth/chr2_lowdepth.depthGlobal, results/depths/lowdepth/chr3_lowdepth.depthGlobal, results/depths/lowdepth/chr4_lowdepth.depthGlobal, results/depths/lowdepth/chr5_lowdepth.depthGlobal, results/depths/lowdepth/chr6_lowdepth.depthGlobal, results/depths/lowdepth/chr7_lowdepth.depthGlobal, results/depths/lowdepth/chr8_lowdepth.depthGlobal, results/depths/lowdepth/chr9_lowdepth.depthGlobal, results/depths/lowdepth/chr10_lowdepth.depthGlobal, results/depths/lowdepth/chr11_lowdepth.depthGlobal, results/depths/lowdepth/chr12_lowdepth.depthGlobal, results/depths/lowdepth/chr13_lowdepth.depthGlobal, results/depths/lowdepth/chr14_lowdepth.depthGlobal, results/depths/lowdepth/chr15_lowdepth.depthGlobal, results/depths/lowdepth/chr16_lowdepth.depthGlobal, results/depths/lowdepth/chr17_lowdepth.depthGlobal, results/depths/lowdepth/chr18_lowdepth.depthGlobal
+    output: results/depths/all_lowdepth.depthGlobal, results/depths/lowdepth.depthMedian
+    jobid: 2
+    wildcards: group=lowdepth
+
+[Mon Jan 11 11:38:20 2021]
+Finished job 2.
+1 of 4 steps (25%) done
+
+[Mon Jan 11 11:38:20 2021]
+rule combine_depths:
+    input: results/depths/highdepth/chr1_highdepth.depthGlobal, results/depths/highdepth/chr2_highdepth.depthGlobal, results/depths/highdepth/chr3_highdepth.depthGlobal, results/depths/highdepth/chr4_highdepth.depthGlobal, results/depths/highdepth/chr5_highdepth.depthGlobal, results/depths/highdepth/chr6_highdepth.depthGlobal, results/depths/highdepth/chr7_highdepth.depthGlobal, results/depths/highdepth/chr8_highdepth.depthGlobal, results/depths/highdepth/chr9_highdepth.depthGlobal, results/depths/highdepth/chr10_highdepth.depthGlobal, results/depths/highdepth/chr11_highdepth.depthGlobal, results/depths/highdepth/chr12_highdepth.depthGlobal, results/depths/highdepth/chr13_highdepth.depthGlobal, results/depths/highdepth/chr14_highdepth.depthGlobal, results/depths/highdepth/chr15_highdepth.depthGlobal, results/depths/highdepth/chr16_highdepth.depthGlobal, results/depths/highdepth/chr17_highdepth.depthGlobal, results/depths/highdepth/chr18_highdepth.depthGlobal
+    output: results/depths/all_highdepth.depthGlobal, results/depths/highdepth.depthMedian
+    jobid: 3
+    wildcards: group=highdepth
+
+[Mon Jan 11 11:38:58 2021]
+Finished job 3.
+2 of 4 steps (50%) done
+
+[Mon Jan 11 11:38:58 2021]
+rule plot_depths:
+    input: results/depths/all_lowdepth.depthGlobal, results/depths/all_highdepth.depthGlobal, results/depths/lowdepth.depthMedian, results/depths/highdepth.depthMedian
+    output: results/plots/depthFilter.png
+    jobid: 1
+
+[Mon Jan 11 11:38:58 2021]
+Error in rule plot_depths:
+    jobid: 1
+    output: results/plots/depthFilter.png
+    shell:
+        Rscript scripts/plotDepths.R results lowdepth highdepth
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /home/genis/warthogs/genome_masks/depth/.snakemake/log/2021-01-11T113738.578836.snakemake.log

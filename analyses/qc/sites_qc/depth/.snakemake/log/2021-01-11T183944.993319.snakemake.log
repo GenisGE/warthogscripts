@@ -1,0 +1,3 @@
+AttributeError in line 24 of /home/genis/warthogs/genome_masks/depth/filter_depth.snakefile:
+'str' object has no attribute 'joint'
+  File "/home/genis/warthogs/genome_masks/depth/filter_depth.snakefile", line 24, in <module>

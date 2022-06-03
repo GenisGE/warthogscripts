@@ -1,0 +1,29 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	2	combine_depths
+	1	plot_depths
+	4
+
+[Mon Jan 11 11:37:11 2021]
+rule combine_depths:
+    input: results/depths/lowdepth/chr1_lowdepth.depthGlobal, results/depths/lowdepth/chr2_lowdepth.depthGlobal, results/depths/lowdepth/chr3_lowdepth.depthGlobal, results/depths/lowdepth/chr4_lowdepth.depthGlobal, results/depths/lowdepth/chr5_lowdepth.depthGlobal, results/depths/lowdepth/chr6_lowdepth.depthGlobal, results/depths/lowdepth/chr7_lowdepth.depthGlobal, results/depths/lowdepth/chr8_lowdepth.depthGlobal, results/depths/lowdepth/chr9_lowdepth.depthGlobal, results/depths/lowdepth/chr10_lowdepth.depthGlobal, results/depths/lowdepth/chr11_lowdepth.depthGlobal, results/depths/lowdepth/chr12_lowdepth.depthGlobal, results/depths/lowdepth/chr13_lowdepth.depthGlobal, results/depths/lowdepth/chr14_lowdepth.depthGlobal, results/depths/lowdepth/chr15_lowdepth.depthGlobal, results/depths/lowdepth/chr16_lowdepth.depthGlobal, results/depths/lowdepth/chr17_lowdepth.depthGlobal, results/depths/lowdepth/chr18_lowdepth.depthGlobal
+    output: results/depths/all_lowdepth.depthGlobal, results/depths/lowdepth.depthMedian
+    jobid: 2
+    wildcards: group=lowdepth
+
+[Mon Jan 11 11:37:13 2021]
+Error in rule combine_depths:
+    jobid: 2
+    output: results/depths/all_lowdepth.depthGlobal, results/depths/lowdepth.depthMedian
+    shell:
+        Rscript scripts/combineDepths.R lowdepth /davidData/genis/references/pig/susscrofa_autosomes.list 5000 results
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /home/genis/warthogs/genome_masks/depth/.snakemake/log/2021-01-11T113711.062453.snakemake.log

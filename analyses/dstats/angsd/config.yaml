@@ -1,0 +1,4 @@
+anc: /emc/genis/pigs/map/ref/susScrofa11.1.fasta.gz
+bed: /home/genis/warthogs/genome_masks/all/beds/autosome_rep_het_dep_map.regions
+chroms: /davidData/genis/references/susScrofa11.1/susScrofa11.1_autosome.list
+bamlist: /home/jfl323/paper/dstat/all_forDstat_loc.txt

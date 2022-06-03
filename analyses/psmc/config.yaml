@@ -1,0 +1,43 @@
+allele_support:
+- '3'
+beds:
+  all_filters: /home/genis/warthogs/genome_masks/all/beds/autosome_rep_het_dep_map.bed
+depths:
+  '1257':
+  - 10
+  - 34
+  '2418':
+  - 10
+  - 32
+  '2541':
+  - 10
+  - 32
+  '7155':
+  - 10
+  - 32
+  '8627':
+  - 10
+  - 34
+  '8922':
+  - 10
+  - 32
+  group1:
+  - 10
+  - 44
+  group4:
+  - 10
+  - 40
+outmain: results
+plot_params:
+  g: 6
+  mu: 3.6e-9
+samples:
+  '1257': /davidData/genis/pigs/mapSusScrofa/map/bam/1257.bam
+  '2418': /davidData/genis/pigs/mapSusScrofa/map/bam/2418.bam
+  '2541': /davidData/genis/pigs/mapSusScrofa/map/bam/2541.bam
+  '7155': /davidData/genis/pigs/mapSusScrofa/map/bam/7155.bam
+  '8627': /davidData/genis/pigs/mapSusScrofa/map/bam/8627.bam
+  '8922': /davidData/genis/pigs/mapSusScrofa/map/bam/8922.bam
+  group1: /davidData/genis/pigs/mapSusScrofa/rehead_merged/group1_merged_fixedrg.bam
+  group4: /davidData/genis/pigs/mapSusScrofa/rehead_merged/group4_merged_fixedrg.bam
+bootstraps: 100

@@ -1,0 +1,2 @@
+qpBrute --par 5Mb_block_ParFile --prefix 5Mb_block_des_gha_tan_nam --pops Desert Ghana Tanzania Namibia --out DomesticPig --threads 40
+qpBayes --geno /steveData/genis/warthogs/geno_calls_forqpgraph/eigenstrat/merged_snps_filtered.geno --ind /steveData/genis/warthogs/geno_calls_forqpgraph/eigenstrat/merged_snps_filtered.ind --snp /steveData/genis/warthogs/geno_calls_forqpgraph/eigenstrat/merged_snps_filtered.snp --prefix 5Mb_block_des_gha_tan_nam --pops Ghana Tanzania Namibia Desert --out DomesticPig --threads 30 | tee 5Mb_block_des_gha_tan_nam_bayes.log

@@ -1,0 +1,45 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 15
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	2	do_filter
+	3
+
+[Mon Jan 11 17:06:34 2021]
+rule do_filter:
+    input: results/depths/highdepth/chr1_highdepth.pos.gz, results/depths/highdepth/chr2_highdepth.pos.gz, results/depths/highdepth/chr3_highdepth.pos.gz, results/depths/highdepth/chr4_highdepth.pos.gz, results/depths/highdepth/chr5_highdepth.pos.gz, results/depths/highdepth/chr6_highdepth.pos.gz, results/depths/highdepth/chr7_highdepth.pos.gz, results/depths/highdepth/chr8_highdepth.pos.gz, results/depths/highdepth/chr9_highdepth.pos.gz, results/depths/highdepth/chr10_highdepth.pos.gz, results/depths/highdepth/chr11_highdepth.pos.gz, results/depths/highdepth/chr12_highdepth.pos.gz, results/depths/highdepth/chr13_highdepth.pos.gz, results/depths/highdepth/chr14_highdepth.pos.gz, results/depths/highdepth/chr15_highdepth.pos.gz, results/depths/highdepth/chr16_highdepth.pos.gz, results/depths/highdepth/chr17_highdepth.pos.gz, results/depths/highdepth/chr18_highdepth.pos.gz, results/depths/highdepth.depthMedian
+    output: results/bed/highdepth_remove.bed
+    log: results/bed/highdepth_remove.log
+    jobid: 3
+    wildcards: group=highdepth
+
+python3 scripts/doDepthFilter.py results/depths/highdepth results/depths/highdepth.depthMedian /davidData/genis/references/pig/susscrofa_autosomes.list results/bed/highdepth_remove
+
+[Mon Jan 11 17:06:34 2021]
+rule do_filter:
+    input: results/depths/lowdepth/chr1_lowdepth.pos.gz, results/depths/lowdepth/chr2_lowdepth.pos.gz, results/depths/lowdepth/chr3_lowdepth.pos.gz, results/depths/lowdepth/chr4_lowdepth.pos.gz, results/depths/lowdepth/chr5_lowdepth.pos.gz, results/depths/lowdepth/chr6_lowdepth.pos.gz, results/depths/lowdepth/chr7_lowdepth.pos.gz, results/depths/lowdepth/chr8_lowdepth.pos.gz, results/depths/lowdepth/chr9_lowdepth.pos.gz, results/depths/lowdepth/chr10_lowdepth.pos.gz, results/depths/lowdepth/chr11_lowdepth.pos.gz, results/depths/lowdepth/chr12_lowdepth.pos.gz, results/depths/lowdepth/chr13_lowdepth.pos.gz, results/depths/lowdepth/chr14_lowdepth.pos.gz, results/depths/lowdepth/chr15_lowdepth.pos.gz, results/depths/lowdepth/chr16_lowdepth.pos.gz, results/depths/lowdepth/chr17_lowdepth.pos.gz, results/depths/lowdepth/chr18_lowdepth.pos.gz, results/depths/lowdepth.depthMedian
+    output: results/bed/lowdepth_remove.bed
+    log: results/bed/lowdepth_remove.log
+    jobid: 2
+    wildcards: group=lowdepth
+
+python3 scripts/doDepthFilter.py results/depths/lowdepth results/depths/lowdepth.depthMedian /davidData/genis/references/pig/susscrofa_autosomes.list results/bed/lowdepth_remove
+[Mon Jan 11 17:46:46 2021]
+Finished job 3.
+1 of 3 steps (33%) done
+[Mon Jan 11 17:46:57 2021]
+Finished job 2.
+2 of 3 steps (67%) done
+
+[Mon Jan 11 17:46:57 2021]
+localrule all:
+    input: results/plots/depthFilter.png, results/bed/lowdepth_remove.bed, results/bed/highdepth_remove.bed
+    jobid: 0
+
+[Mon Jan 11 17:46:57 2021]
+Finished job 0.
+3 of 3 steps (100%) done
+Complete log: /home/genis/warthogs/genome_masks/depth/.snakemake/log/2021-01-11T170634.509943.snakemake.log
