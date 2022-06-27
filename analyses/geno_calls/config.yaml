@@ -1,0 +1,38 @@
+chroms:
+- chr1
+- chr2
+- chr3
+- chr4
+- chr5
+- chr6
+- chr7
+- chr8
+- chr9
+- chr10
+- chr11
+- chr12
+- chr13
+- chr14
+- chr15
+- chr16
+- chr17
+- chr18
+outbig: /steveData/genis/warthogs/geno_calls2
+outmain: results
+ref: /davidData/genis/references/pig/SusScrofa11.1.fasta.gz
+samples:
+  'Ghana_7155': /davidData/genis/pigs/mapSusScrofa/map/bam/7155.bam
+  'Tanzania_8627': /davidData/genis/pigs/mapSusScrofa/map/bam/8627.bam
+  'Zambia_2541': /davidData/genis/pigs/mapSusScrofa/map/bam/2541.bam
+  'Zimbabwe_1257': /davidData/genis/pigs/mapSusScrofa/map/bam/1257.bam
+  'Namibia_2418': /davidData/genis/pigs/mapSusScrofa/map/bam/2418.bam 
+  'Desert_8922': /davidData/genis/pigs/mapSusScrofa/map/bam/8922.bam
+  'GiantForestHog_1937': /jbod1/genis/pigs/old_mapping_nomtdna/map/bam/1937.bam
+  'RedRiverHog_1110': /jbod1/genis/pigs/old_mapping_nomtdna/map/bam/1110.bam
+  'DomesticPig_1003': /jbod1/genis/pigs/old_mapping_nomtdna/map/bam/1003.bam
+  'Babirusa_babirusa': /davidData/genis/pigs/mapSusScrofa/map/bam/babirusa.bam
+filters:
+ bed: /home/genis/warthogs/genome_masks/all/beds/autosome_rep_het_dep_map.bed
+ minad: 2
+ mindep: 6
+ maxdep: 50
