@@ -1,0 +1,25 @@
+
+BCFTOOLS=/home/genis/software/bcftools/bcftools
+CONVERT=/home/genis/software/genomics_general/VCF_processing/parseVCF.py
+DWIN=/home/genis/software/genomics_general/ABBABABAwindows.py
+
+
+#bcf=/steveData/genis/warthogs/geno_calls_forqpgraph/vcf/merged_snps_filtered.bcf.gz
+vcf=/home/genis/warthogs/analyses/dstats_pig/windows_dstats/warts_highdepth_all.vcf.gz
+geno=warts_highdepth_all.geno.gz
+
+
+#python3 $CONVERT -i $vcf | bgzip > $geno
+
+
+
+#sed 1d /home/genis/warthogs/analyses/fst/results2/pbs/desert_namibia_ghana_slidingwindow_10000_stepsize_5000.pbs_clean.pbs | awk '{print $2"\t"$3-5000"\t"$3+5000}' | /home/genis/software/bedtools2/bin/bedtools sort -g /davidData/genis/references/susScrofa11.1/susScrofa11.1_autosome.list > wins_10kb.list
+
+wins=wins_10kb.list
+pops=pops.list
+
+for p2 in Tanzania Namibia
+do
+    out=abbababa_win10kb_Ghana${p2}Desert.csv.gz
+    echo "python3 $DWIN -g $geno --windType predefined --windCoords $wins --minData 1 -P1 Ghana -P2 $p2 -P3 Desert -O DomesticPig --popsFile $pops --addWindowID --writeFailedWindows -f phased -o $out"
+done | xargs -L1 -I CMD -P2 nice bash -c CMD
